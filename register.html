@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/output.css" />
+    <title>Register</title>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-img">
+    <div
+      class="md:w-[390px] shadow-lg p-8 flex flex-col justify-center items-center gap-2 bg-white"
+    >
+      <h1 class="font-integral text-center text-2xl">Welcome to our Store</h1>
+      <h3 class="font-integral text-center text-xl mb-5">Please register</h3>
+      <form class="flex flex-col gap-2 w-full">
+        <div class="flex flex-col w-full">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            class="w-full px-2 border-b border-black focus:outline-none"
+            id="name"
+          />
+        </div>
+        <p id="nameErr" class="hidden text-red-600 font-satoshi">
+          Please enter a proper name
+        </p>
+
+        <div class="flex flex-col w-full">
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            class="w-full px-2 border-b border-black focus:outline-none"
+          />
+        </div>
+        <p id="emailErr" class="hidden text-red-600">
+          Please enter a proper Email
+        </p>
+
+        <div class="flex flex-col w-full">
+          <label for="password">Password:</label>
+          <input
+            type="text"
+            id="password"
+            class="w-full px-2 border-b border-black focus:outline-none focus:border-gray-500"
+          />
+        </div>
+
+        <p id="passwordErr" class="hidden text-red-600">
+          Password should be at least 8 characters
+        </p>
+        <button
+          type="submit"
+          class="bg-black block mt-4 text-white w-fit self-center rounded-full pt-1 pb-1 pr-10 pl-10 hover:cursor-pointer hover:scale-105 transition-all duration-75"
+        >
+          Register
+        </button>
+      </form>
+      <div class="flex flex-col items-center">
+        <p class="text-center text">Already have an account?</p>
+        <a href="login.html" class="text-blue-600 underline">Sign in </a>
+      </div>
+    </div>
+    <script src="register.js"></script>
+  </body>
+</html>
