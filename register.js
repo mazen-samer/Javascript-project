@@ -56,12 +56,13 @@ function register() {
   xhr.addEventListener("readystatechange", () => {
     if (xhr.readyState === 4) {
       if (xhr.status === 201) {
-        let response = JSON.parse(xhr.responseText);
+        let response = JSON.parse(xhr.response);
+        console.log(response);
         sessionStorage.setItem("user", response.name);
         formName.value = "";
         formEmail.value = "";
         formPassword.value = "";
-        // window.location.href = "./login.html";
+        window.location.href = "./homepage.html";
       } else {
         alert("Register failed");
         console.error("Register failed:", xhr.status, xhr.responseText);
