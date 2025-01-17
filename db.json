@@ -1,10 +1,3 @@
 {
-  "users": [
-    {
-      "id": "8ece",
-      "name": "Mazen",
-      "email": "mazen.samer.2000@gmail.com",
-      "password": "mazen3042000"
-    }
-  ]
+  "users": []
 }

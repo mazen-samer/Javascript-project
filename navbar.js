@@ -13,6 +13,7 @@ let navOpenBtn = document.getElementById("nav-open-btn");
 let navCloseBtn = document.getElementById("nav-close-btn");
 
 if (userName) {
+  userName = userName.split(" ")[0];
   userNameLogout.classList.add("flex");
   loginRegister.classList.add("hidden");
   loginRegisterSm.classList.add("hidden");
