@@ -3,10 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/dc8407da84.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/output.css" />
     <title>Home</title>
   </head>
-  <body>
-    <nav></nav>
-    <script src="homepage.js"></script>
+  <body class="bg-black">
+    <nav
+      class="relative flex justify-between items-center px-16 shadow-lg text-lg bg-white"
+    >
+      <img class="w-10 h-10" src="./style/imgs/logo.png" alt="logo" />
+      <ul class="hidden md:flex">
+        <li
+          class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+        >
+          <a class="px-5 py-4 block" href="homepage.html">Home</a>
+        </li>
+        <li
+          class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+        >
+          <a class="px-5 py-4 block" href="products.html">Products</a>
+        </li>
+        <li
+          class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+        >
+          <a class="px-5 py-4 block" href="homepage.html#categories"
+            >Categories</a
+          >
+        </li>
+      </ul>
+      <ul class="hidden md:flex">
+        <li
+          class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+        >
+          <a class="px-5 py-4 block" href=""
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+        </li>
+        <ul id="login-register" class="">
+          <li
+            class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+          >
+            <a class="px-5 py-4 block" href="login.html">Login</a>
+          </li>
+          <li
+            class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+          >
+            <a class="px-5 py-4 block" href="register.html">Register</a>
+          </li>
+        </ul>
+        <ul id="username-logout" class="">
+          <p class="px-1 py-4 border-2 border-white">Hello, Mazen</p>
+          <button
+            id="logout"
+            class="px-5 py-4 block hover:bg-black hover:text-white transition-all"
+          >
+            Logout
+          </button>
+        </ul>
+      </ul>
+    </nav>
+    <script src="navbar.js"></script>
   </body>
 </html>
