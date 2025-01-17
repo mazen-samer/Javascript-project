@@ -566,16 +566,16 @@ video {
   position: relative;
 }
 
+.-right-full{
+  right: -100%;
+}
+
 .right-0{
   right: 0px;
 }
 
 .top-0{
   top: 0px;
-}
-
-.-right-full{
-  right: -100%;
 }
 
 .mb-5{
