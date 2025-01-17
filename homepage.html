@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style/output.css" />
     <title>Home</title>
   </head>
-  <body class="bg-black">
+  <body class="bg-black overflow-hidden">
     <nav
       class="relative flex justify-between items-center px-16 shadow-lg text-lg bg-white"
     >
@@ -38,7 +38,7 @@
         <li
           class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
         >
-          <a class="px-5 py-4 block" href=""
+          <a class="px-5 py-4 block" href="search.html"
             ><i class="fa-solid fa-magnifying-glass"></i
           ></a>
         </li>
@@ -55,7 +55,10 @@
           </li>
         </ul>
         <ul id="username-logout" class="">
-          <p class="px-1 py-4 border-2 border-white">Hello, Mazen</p>
+          <p
+            id="username"
+            class="px-1 py-4 border-2 border-white font-bold"
+          ></p>
           <button
             id="logout"
             class="px-5 py-4 block hover:bg-black hover:text-white transition-all"
@@ -64,6 +67,54 @@
           </button>
         </ul>
       </ul>
+      <i
+        id="nav-open-btn"
+        class="md:hidden py-6 px-4 cursor-pointer fa-solid fa-bars"
+      ></i>
+      <div
+        id="nav-2"
+        class="absolute bg-white top-0 transition-all -right-full h-screen flex flex-col gap-5 w-60"
+      >
+        <ul class="flex flex-col">
+          <li id="nav-close-btn" class="self-end px-4 py-2">
+            <i class="fa-solid fa-xmark"></i>
+          </li>
+          <li class="pb-4">
+            <a class="px-4 py-2 block" href="search.html"
+              ><i class="fa-solid fa-magnifying-glass"></i> Search</a
+            >
+          </li>
+          <ul id="login-register-sm" class="flex-col">
+            <li class="border-b">
+              <a class="px-4 py-2 block" href="login.html">Login</a>
+            </li>
+            <li>
+              <a class="px-4 py-2 block" href="register.html">Register</a>
+            </li>
+          </ul>
+          <ul id="username-logout-sm" class="flex-col">
+            <li class="border-b">
+              <p id="username-sm" class="px-4 py-2 font-bold"></p>
+            </li>
+            <li>
+              <button id="logout-sm" class="px-4 py-2 block">Logout</button>
+            </li>
+          </ul>
+        </ul>
+        <ul class="">
+          <li class="border-b">
+            <a class="px-4 py-2 block" href="homepage.html">Home</a>
+          </li>
+          <li class="border-b">
+            <a class="px-4 py-2 block" href="products.html">Products</a>
+          </li>
+          <li>
+            <a class="px-4 py-2 block" href="homepage.html#categories"
+              >Categories</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
     <script src="navbar.js"></script>
   </body>

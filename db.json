@@ -1,27 +1,9 @@
 {
   "users": [
     {
-      "id": "94e6",
-      "name": "maze",
+      "id": "8ece",
+      "name": "Mazen",
       "email": "mazen.samer.2000@gmail.com",
-      "password": "mazen3042000"
-    },
-    {
-      "id": "923f",
-      "name": "mszrn",
-      "email": "mazen.samer@gmail.com",
-      "password": "mazen3042000"
-    },
-    {
-      "id": "8ae8",
-      "name": "ahmed",
-      "email": "ahmedkhaled865675@gmail.com",
-      "password": "mazen3042000"
-    },
-    {
-      "id": "0338",
-      "name": "roshdi",
-      "email": "roshdi@gmail.com",
       "password": "mazen3042000"
     }
   ]
