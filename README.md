@@ -19,6 +19,11 @@ This website is designed as an e-commerce platform, providing a seamless shoppin
 - **JavaScript**: JavaScript is used for dynamic functionality, such as managing user authentication and handling interactive elements.
 - **JSON Server**: A fake REST API is used via JSON Server to simulate backend functionality, particularly for handling user data (authentication, registration, etc.).
 
+**Run commands**:
+
+- To run the json server go to server directory _cd ./server_ and run **npx json-server .\db.json** in cmd.
+- To run the tailwind watch command go to project directory _./_ and run **npx tailwindcss -i ./client/style/input.css -o ./client/style/output.css --watch** in cmd.
+
 ## Conclusion
 
 This e-commerce website provides a smooth and user-friendly interface for browsing and purchasing products, with essential features like category and product browsing, user authentication, and a responsive design. It is built with HTML, Tailwind CSS, JavaScript, and a JSON Server to simulate backend functionality.
