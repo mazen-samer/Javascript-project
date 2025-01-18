@@ -33,8 +33,8 @@ function displayData() {
     // Ensure the random number hasn't been added to the array yet
     if (!(array.includes(random))) {
       cartona +=
-      
-       `
+   `  
+ <a href="">    
 <div class="flex flex-wrap sm:flex-col sm:space-x-4 space-y-4 ">
   
   <div class="container m-7 card cursor-pointer w-44 h-[400px] sm:w-72 md:w-44 lg:w-44 rounded-xl shadow-lg overflow-hidden 
@@ -56,8 +56,7 @@ function displayData() {
     </div>
   </div>
 </div>
-
-
+</a>  
       `
 
       // Add the random number to the array to avoid duplicates
