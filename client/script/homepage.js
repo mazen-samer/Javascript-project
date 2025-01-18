@@ -1,9 +1,3 @@
-
-
-
-
-
-
 var myhttp = new XMLHttpRequest();
 var dataArr = [];
 
@@ -15,27 +9,22 @@ myhttp.addEventListener("readystatechange", function () {
     displayData();
   }
 });
-console.log(dataArr)
-
-
-
-
+console.log(dataArr);
 
 function displayData() {
   var cartona = "";
   var array = [];
-  for (var i = 0; i < 6; i++) {
+  for (var i = 0; i < 4; i++) {
     var min = 1;
     var max = 20;
     var j = Math.random() * (max - min) + min;
     var random = Math.floor(j);
 
     // Ensure the random number hasn't been added to the array yet
-    if (!(array.includes(random))) {
-      cartona +=
-   `  
+    if (!array.includes(random)) {
+      cartona += `  
  <a href="">    
-<div class="flex flex-wrap sm:flex-col sm:space-x-4 space-y-4 ">
+<div class="flex flex-wrap sm:flex-col sm:space-x-4 ">
   
   <div class="container m-7 card cursor-pointer w-44 h-[400px] sm:w-72 md:w-44 lg:w-44 rounded-xl shadow-lg overflow-hidden 
     transition-all duration-300 ease-in-out transform hover:w-80 hover:shadow-2xl sm:h-[450px]">
@@ -46,7 +35,7 @@ function displayData() {
            ${dataArr[random].title}
            </h3>
           <p class="text-sm font-bold text-gray-900 mt-2">
-           ${dataArr[random].price}
+           ${dataArr[random].price} LE
           <br>
          <i class="fa-solid fa-star" style="color: #f2c218;"></i>
          <i class="fa-solid fa-star" style="color: #f2c218;"></i>
@@ -57,7 +46,7 @@ function displayData() {
   </div>
 </div>
 </a>  
-      `
+      `;
 
       // Add the random number to the array to avoid duplicates
       array.push(random);
@@ -65,9 +54,4 @@ function displayData() {
     }
   }
   document.getElementById("category-container").innerHTML = cartona;
-  
 }
-
-
-
-
