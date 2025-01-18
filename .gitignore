@@ -1,3 +1,5 @@
+node_modules
+node_modules/
 node_modules/.package-lock.json
 node_modules/.bin/cssesc
 node_modules/.bin/cssesc.cmd
