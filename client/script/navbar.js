@@ -1,4 +1,5 @@
-let userName = sessionStorage.getItem("user");
+let user = JSON.parse(sessionStorage.getItem("user"));
+
 let userNameP = document.getElementById("username");
 let userNamePSm = document.getElementById("username-sm");
 let loginRegister = document.getElementById("login-register");
@@ -12,8 +13,8 @@ let nav2 = document.getElementById("nav-2");
 let navOpenBtn = document.getElementById("nav-open-btn");
 let navCloseBtn = document.getElementById("nav-close-btn");
 
-if (userName) {
-  userName = userName.split(" ")[0];
+if (user) {
+  let userName = user.user.split(" ")[0];
   userNameLogout.classList.add("flex");
   loginRegister.classList.add("hidden");
   loginRegisterSm.classList.add("hidden");
@@ -50,6 +51,7 @@ logout.addEventListener("click", () => {
   userNameLogout.classList.add("hidden");
   loginRegister.classList.remove("hidden");
   loginRegister.classList.add("flex");
+  window.location.href = "./homepage.html";
 });
 logoutSm.addEventListener("click", () => {
   sessionStorage.removeItem("user");
@@ -62,4 +64,5 @@ logoutSm.addEventListener("click", () => {
   loginRegisterSm.classList.add("flex");
   userNameLogoutSm.classList.remove("block");
   userNameLogoutSm.classList.add("hidden");
+  window.location.href = "./homepage.html";
 });
