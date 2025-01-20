@@ -57,8 +57,12 @@ function register() {
     if (xhr.readyState === 4) {
       if (xhr.status === 201) {
         let response = JSON.parse(xhr.response);
-        console.log(response);
-        sessionStorage.setItem("user", response.name);
+        let obj = {
+          id: response.id,
+          user: response.name,
+          cart: response.cart,
+        };
+        sessionStorage.setItem("user", JSON.stringify(obj));
         formName.value = "";
         formEmail.value = "";
         formPassword.value = "";
@@ -73,6 +77,7 @@ function register() {
     name: formName.value,
     email: formEmail.value,
     password: formPassword.value,
+    cart: [],
   };
   xhr.send(JSON.stringify(data));
 }

@@ -48,8 +48,15 @@ function login() {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
         let response = JSON.parse(xhr.responseText);
+        console.log(response);
+
         if (response.length === 1) {
-          sessionStorage.setItem("user", response[0].name);
+          let obj = {
+            id: response[0].id,
+            user: response[0].name,
+            cart: response[0].cart,
+          };
+          sessionStorage.setItem("user", JSON.stringify(obj));
           window.location.href = "./homepage.html";
         } else {
           alert("No user found");
