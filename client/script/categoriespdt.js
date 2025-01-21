@@ -1,5 +1,6 @@
 let urlParams = new URLSearchParams(window.location.search);
 let category = urlParams.get('category');
+document.getElementById ('cat-header').innerHTML=category;
 
 if (category && category.toLowerCase() === "jewelry") {
   category = "jewelery";
@@ -12,6 +13,7 @@ myhttp.send();
 myhttp.addEventListener("readystatechange", function () {
   if (myhttp.readyState == 4) {
     dataArr = JSON.parse(myhttp.response);
+
     displayCategoryProducts(category, dataArr); 
   }
 });
@@ -35,7 +37,7 @@ function displayCategoryProducts(category, dataArr) {
                 </div>
               </div>
               <div class="flex items-center justify-between">
-                <span class="text-2xl font-bold text-gray-900 dark:text-white">$${product.price}</span>
+                <span class="text-2xl font-bold text-gray-900 dark:text-white">${product.price} LE</span>
               </div>
             </div>
           </div>
