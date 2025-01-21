@@ -828,6 +828,10 @@ video {
   height: 100vh;
 }
 
+.h-96{
+  height: 24rem;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -903,6 +907,10 @@ video {
 
 .max-w-xl{
   max-width: 36rem;
+}
+
+.max-w-7xl{
+  max-width: 80rem;
 }
 
 .flex-1{
@@ -1346,6 +1354,10 @@ video {
 
 .pt-4{
   padding-top: 1rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .text-left{
