@@ -55,3 +55,14 @@ function displayData() {
   }
   document.getElementById("category-container").innerHTML = cartona;
 }
+
+
+
+//get categories
+let viewMoreBtn = document.querySelectorAll('button[data-category]');
+for (let i = 0; i < viewMoreBtn.length; i++) {
+  viewMoreBtn[i].addEventListener('click', function() {
+    let category = this.getAttribute('data-category');
+    window.location.href = `categoriespdt.html?category=${category}`;  
+  });
+}
