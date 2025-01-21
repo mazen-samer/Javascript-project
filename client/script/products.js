@@ -60,9 +60,9 @@ function display() {
                 </div>
             </div>
             <div class="flex items-center justify-between">
-                <span class="text-xl font-bold text-gray-900">$${
+                <span class="text-xl font-bold text-gray-900">${
                   data[i].price
-                }</span>
+                } L.E</span>
             </div>
         </div>
     </div>
