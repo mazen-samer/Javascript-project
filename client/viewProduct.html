@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/output.css">
+    <title>Document</title>
+</head>
+<body  class="overflow-x-hidden">
+    <nav
+    class="relative flex justify-between items-center px-16 shadow-lg text-lg bg-white"
+  >
+    <img class="w-10 h-10" src="./style/imgs/logo.png" alt="logo" />
+    <ul class="hidden md:flex">
+      <li
+        class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+      >
+        <a class="px-5 py-4 block" href="homepage.html">Home</a>
+      </li>
+      <li
+        class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+      >
+        <a class="px-5 py-4 block" href="products.html">Products</a>
+      </li>
+      <li
+        class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+      >
+        <a class="px-5 py-4 block" href="homepage.html#categories"
+          >Categories</a
+        >
+      </li>
+    </ul>
+    <ul class="hidden md:flex">
+      <li
+        class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+      >
+        <a class="px-5 py-4 block" href="search.html"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+      </li>
+      <ul id="login-register" class="">
+        <li
+          class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+        >
+          <a class="px-5 py-4 block" href="login.html">Login</a>
+        </li>
+        <li
+          class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+        >
+          <a class="px-5 py-4 block" href="register.html">Register</a>
+        </li>
+      </ul>
+      <ul id="username-logout" class="">
+        <li
+          class="border-2 border-white hover:border-b-2 hover:border-b-black transition-all"
+        >
+          <a class="px-5 py-4 block" href="cart.html"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </li>
+        <p
+          id="username"
+          class="px-1 py-4 border-2 border-white font-bold"
+        ></p>
+        <button
+          id="logout"
+          class="px-5 py-4 block hover:bg-black hover:text-white transition-all"
+        >
+          Logout
+        </button>
+      </ul>
+    </ul>
+    <i
+      id="nav-open-btn"
+      class="md:hidden py-6 px-4 cursor-pointer fa-solid fa-bars"
+    ></i>
+    <div
+      id="nav-2"
+      class="shadow-lg absolute bg-white top-0 transition-all -right-full h-screen flex flex-col gap-5 w-60 z-20"
+    >
+      <ul class="flex flex-col">
+        <li id="nav-close-btn" class="self-end px-4 py-2 cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </li>
+        <li class="pb-4">
+          <a class="px-4 py-2 block" href="search.html"
+            ><i class="fa-solid fa-magnifying-glass"></i> Search</a
+          >
+        </li>
+        <ul id="login-register-sm" class="flex-col">
+          <li class="border-b">
+            <a class="px-4 py-2 block" href="login.html">Login</a>
+          </li>
+          <li>
+            <a class="px-4 py-2 block" href="register.html">Register</a>
+          </li>
+        </ul>
+        <ul id="username-logout-sm" class="flex-col">
+          <li class="pb-4">
+            <a class="px-4 py-2 block" href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i> Cart</a
+            >
+          </li>
+          <li class="border-b">
+            <p id="username-sm" class="px-4 py-2 font-bold"></p>
+          </li>
+          <li>
+            <button id="logout-sm" class="px-4 py-2 block">Logout</button>
+          </li>
+        </ul>
+      </ul>
+      <ul class="">
+        <li class="border-b">
+          <a class="px-4 py-2 block" href="homepage.html">Home</a>
+        </li>
+        <li class="border-b">
+          <a class="px-4 py-2 block" href="products.html">Products</a>
+        </li>
+        <li>
+          <a class="px-4 py-2 block" href="homepage.html#categories"
+            >Categories</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+    <div id="view-product">
+        
+
+    </div>
+
+    
+  </div>
+
+  <script src="./script/navbar.js"></script>
+
+  <script src="./script/viewProduct.js"></script>
+
+  
+    
+</body>
+</html>
