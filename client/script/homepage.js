@@ -35,7 +35,7 @@ function displayData() {
            ${dataArr[random].title}
            </h3>
           <p class="text-sm font-bold text-gray-900 mt-2">
-           ${dataArr[random].price} LE
+           ${dataArr[random].price} L.E
           <br>
          <i class="fa-solid fa-star" style="color: #f2c218;"></i>
          <i class="fa-solid fa-star" style="color: #f2c218;"></i>
@@ -56,13 +56,11 @@ function displayData() {
   document.getElementById("category-container").innerHTML = cartona;
 }
 
-
-
 //get categories
 // let viewMoreBtn = document.querySelectorAll('button[data-category]');
 // for (let i = 0; i < viewMoreBtn.length; i++) {
 //   viewMoreBtn[i].addEventListener('click', function() {
 //     let category = this.getAttribute('data-category');
-//     window.location.href = `categoriespdt.html?category=${category}`;  
+//     window.location.href = `categoriespdt.html?category=${category}`;
 //   });
 // }
