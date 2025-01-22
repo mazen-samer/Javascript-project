@@ -119,66 +119,63 @@
     </nav>
 
 
-<header class="flex justify-between" >
+<header class="flex justify-between bg-img">
+  <section class="flex flex-col sm:flex-row w-full h-full py-1 px-4 text-left break-words">   
+    <div class="secation1 w-full h-1/2 text-6xl py-14 pl-14 text-left break-word">
 
+     
+      <div class="flex flex-col sm:flex-row w-full sm:items-center sm:justify-between">
+        
+        
+        <div id="alltext" class="w-full text-left sm:w-[60%]  sm:text-left">
+          <p class="font-extrabold font-integral w-1/2 text-4xl sm:text-3xl md:text-2xl lg:text-6xl lg:w-[500px] lg:mt-10 sm:w-[400px]">
+            FIND ALL THAT MATCHES YOUR UNIQUE STYLE !
+          </p>
+          <p class="text-4xl sm:text-2xl md:text-xl lg:text-5xl md:mt-4 sm:w-[60%] lg:mt-5">
+            JUST IN <span class="font-extrabold font-integral">ONE</span> PLACE
+          </p>
+          <p class="text-lg font-light mt-4 text-start text-wrap sm:text-lg md:text-lg lg:text-3xl md:w-[50%] text-gray-900">
+            Discover a world of endless possibilities with our curated selection of products!
+          </p>
+          <a href="#comeHere" class="w-full sm:w-auto mt-10 sm:mt-2 block">
+            <button class="w-full sm:w-auto px-6 sm:px-10 py-3 lg:mt-5 bg-black text-2xl sm:text-3xl text-white font-extrabold rounded-xl hover:bg-white hover:text-red-600 transition duration-500 ease-in-out">
+              SHOP NOW !
+            </button>
+          </a>
 
-    <section class="flex flex-col items-center sm:flex-row w-full h-full py-8 px-4 text-left break-words">   
-    <div class="secation1 w-full h-1/2 text-6xl py-14 pl-14 text-left break-word ">
-      <p class="font-extrabold font-integral w-1/2 text-4xl sm:text-3xl md:text-2xl lg:text-6xl">
-        FIND ALL THAT MATCHES YOUR UNIQUE STYLE ! 
-      </p>
-      <p class="text-4xl sm:text-4xl md:text-6xl md:mt-4">
-        JUST IN <span class="font-extrabold  font-integral">ONE</span> PLACE
-      </p>
-      <p class="text-lg font-light mt-4 text-start sm:text-base text-wrap md:text-3xl w-[40%] ">
-        Discover a world of endless possibilities with our curated selection of products!
-      </p>
+          <!-- Stats section -->
+          <div class="text-black flex flex-col sm:flex-row justify-between py-8  lg:w-[70%] lg:mt-4 md:w-[600px] md:mt-10 sm:w-[600px] ">
+            <div class="text-center lg:text-left">
+              <p class="text-5xl sm:text-left">200+</p>
+              <p class="text-xl font-extralight text-center lg:text-left mt-2 text-gray-900">International Brands</p>
+            </div>
+            <div class="text-center lg:text-left">
+              <p class="text-5xl sm:text-left">2,000+</p>
+              <p class="text-xl font-extralight text-center lg:text-left mt-2 text-gray-900">High Quality Products</p>
+            </div>
+            <div class="text-center lg:text-left">
+              <p class="text-5xl sm:text-left">30,000+</p>
+              <p class="text-xl font-extralight text-center lg:text-left mt-2 text-gray-900">Happy Customers</p>
+            </div>
+          </div>
+        </div>
 
-      <a href="#comeHere" class="w-full sm:w-auto mt-10 sm:mt-12 block ">
-        <button class=" w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 bg-black text-2xl sm:text-3xl text-white font-extrabold rounded-xl hover:bg-white hover:text-red-600 transition duration-500 ease-in-out">
-          Flash Sales !
-        </button>
-      </a>
+        <!-- Image (make it responsive to align in column below 640px) -->
+        <img src="style/imgs/cart.png" class="shop-image  w-[50%] ml-[25%] mt-2 sm:w-[30%] lg:w-[27%] lg:h-full sm:mt-[10%] lg:mt-[8%] lg:mr-[7%] sm:mr-[5%]  sm:mx-auto" />
+        
+      </div>
+
     </div>
   </section>
-
-  <img src="style/imgs/shop.png" class="shop-image" style="position: absolute; width: 25%; object-fit: contain; height: auto; margin-left: 60%; top: 20%;">
-
-  <style>
-    /* Default styles for larger screens */
-    .shop-image {
-      position: absolute;
-      width: 25%;
-      object-fit: contain;
-      height: auto;
-      margin-left: 60%;
-      margin-top: -6%;
-     
-    }
-  
-    /* Media query for small screens */
-    @media (max-width: 640px) {
-      .shop-image {
-        position: relative;
-        margin-left: 0;
-        width: 80%;
-        top: 0;
-        display: block;
-        margin-top: 60px;
-      }
-    }
-  </style>
-  
 </header>
 
+
   
+
+
     <div
-      class="flex justify-center  mt-10 "
-      style="
-        background: linear-gradient(
-          153deg,
-          rgba(0, 0, 0, 0.9753151260504201) 46%,
-          rgba(94, 87, 93, 0.8800770308123249) 88%);"
+      class="flex justify-center "
+      style="background: linear-gradient(153deg,rgba(0, 0, 0, 0.9753151260504201) 46%,rgba(94, 87, 93, 0.8800770308123249) 88%);"
     >
       <div
         class="w-[80%] h-auto mt-5 sm:h-52 flex flex-col sm:flex-col md:h-52 md:flex-col lg:flex-row justify-between items-center  font-integral text-white font-bold text-lg sm:text-2xl md:text-2xl  px-4 sm:px-10 md:px-20 py-4 sm:py-5"
@@ -239,15 +236,15 @@
       <!-- Flex container with wrapping on smaller screens -->
       <div
         id="categories"
-        class="flex flex-col   sm:flex-row flex-wrap justify-center p-5 sm:p-20  gap-5 sm:gap-7      w-[100%] h-[50%]">
+        class="flex flex-col   sm:flex-row flex-wrap justify-center p-5 sm:p-20  gap-5 sm:gap-7 items-center  w-[100%] h-[50%]  ">
 
 
-        <div class=" relative group  w-64 bg-gray-100 py-14   sm:mb-10 border rounded-xl shadow-lg shadow-slate-900">
+        <div class=" relative group  w-64 bg-gray-200 py-14  sm:mb-10 border rounded-xl shadow-lg ">
           <p class="from-neutral-100 text-center text-gray-900  font-integral text-2xl ">Jewlery</p>
           <div class="">
-               <img class="sm:mt-24 rounded-t-lg w-full h-full object-contain  transition-transform duration-300 group-hover:scale-105 " src="style/imgs/jewlery.png " alt="" />
+               <img class="sm:mt-24 rounded-t-lg w-full lg:h-[300px] sm:h-[300px] object-contain  transition-transform duration-300 group-hover:scale-105 " src="style/imgs/jewlery.png " alt="" />
               <a href="categoriespdt.html?category=jewelery"><button
-                class="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white 
+                class="absolute bottom-[-1] left-1/2 transform -translate-x-1/2 bg-gray-900 text-white 
                 px-6 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 View More
               </button></a>
@@ -256,12 +253,12 @@
 
 
 
-      <div class=" relative group w-64 bg-gray-100 py-14   sm:mb-10 border rounded-xl shadow-lg shadow-slate-900 ">
+      <div class=" relative group w-64 bg-gray-200 py-14   sm:mb-10 border rounded-xl shadow-lg ">
         <p class="from-neutral-100 text-center text-gray-900  font-integral text-2xl ">Women's Wear</p>
         <div class="">
-             <img class="sm:mt-24 rounded-t-lg w-[full] h-full object-contain  transition-transform duration-300 group-hover:scale-105 " src="style/imgs/women's clothes.png " alt="" />
+             <img class="sm:mt-24 rounded-t-lg w-[full] lg:h-[300px] sm:h-[300px]  object-contain  transition-transform duration-300 group-hover:scale-105 " src="style/imgs/women's clothes.png " alt="" />
             <a href="categoriespdt.html?category=women's clothing"><button
-              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white 
+              class="absolute bottom-[-1] left-1/2 transform -translate-x-1/2 bg-gray-900 text-white 
               px-6 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               View More
             </button></a>
@@ -270,12 +267,12 @@
           
 
 
-  <div class=" relative group w-64 bg-gray-100 py-14  sm:mb-10 border rounded-xl shadow-lg shadow-slate-900 ">
+  <div class=" relative group w-64 bg-gray-200 py-14  sm:mb-10 border rounded-xl shadow-lg ">
     <p class="from-neutral-100 text-center text-gray-900  font-integral text-2xl">Men's Wear</p>
     <div class="">
-         <img class="sm:mt-24 rounded-t-lg w-[full] h-full object-contain  transition-transform duration-300 group-hover:scale-105 " src="style/imgs/men's clothes.png " alt="" />
+         <img class="sm:mt-24 rounded-t-lg w-[full] lg:h-[300px] sm:h-[300px]   object-contain  transition-transform duration-300 group-hover:scale-105 " src="style/imgs/men's clothes.png " alt="" />
         <a href="categoriespdt.html?category=men's clothing"><button
-          class="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white 
+          class="absolute bottom-[-1] left-1/2 transform -translate-x-1/2 bg-gray-900 text-white 
           px-6 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           View More
         </button></a>
@@ -283,22 +280,17 @@
 </div>
       
 
-<div class=" relative group w-64 bg-gray-100 py-14  sm:mb-10  border rounded-xl shadow-lg shadow-slate-900 ">
+<div class=" relative group w-64 bg-gray-200 py-14  sm:mb-10  border rounded-xl shadow-lg  ">
   <p class=" from-neutral-100 text-center text-gray-900  font-integral text-2xl">Electronics</p>
   <div class="">
-       <img class="sm:mt-24 rounded-t-lg w-full h-full object-contain  transition-transform duration-300 group-hover:scale-105 " src="style/imgs/electronics.png " alt="" />
+       <img class="sm:mt-24 rounded-t-lg w-full lg:h-[300px] sm:h-[300px] object-contain  transition-transform duration-300 group-hover:scale-105 " src="style/imgs/electronics.png " alt="" />
       <a href="categoriespdt.html?category=electronics"><button
-        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white 
+        class="absolute bottom-[-1] left-1/2 transform -translate-x-1/2 bg-gray-900 text-white 
         px-6 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         View More
       </button></a>
   </div>
 </div>
-
-
-
-
-
 
       </div>
     </div>
