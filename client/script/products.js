@@ -63,6 +63,8 @@ function display() {
         </div>
     </div>
 </div> ` ;
+
+           
     }
 
     // Insert generated HTML into the container
